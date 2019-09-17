@@ -1,0 +1,82 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	width: 100%;
+	background-color: #FFF;
+	border-bottom: 1px solid #DBDBDB;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+	color: #666666;
+}
+
+.navbar-hamburgerbutton {
+	flex: 4;
+}
+
+.navbar-calendarlogo {
+	flex: 4;
+}
+
+.navbar-todaybutton {
+	flex: 4;
+}
+
+.navbar-arrowbuttons {
+	flex: 4;
+}
+
+.navbar-currentmonthyear {
+	flex: 56;
+	font-size: 0.95rem;
+	color: black;
+}
+
+.navbar-settingsbutton {
+	flex: 2;
+}
+
+.navbar-changeviewbutton {
+	flex: 2;
+}
+
+.navbar-profilephotoicon {
+	flex: 4;
+}
+
+.navbar-spacer-1 {
+	flex: 1;
+}
+
+.navbar-spacer-2 {
+	flex: 0;
+}
+
+.navbar-spacer-3 {
+	flex: 4;
+}
+
+.navbar-spacer-4 {
+	flex: 1;
+}
+
+.navbar-spacer-5 {
+	flex: 1;
+}
+
+.navbar-spacer-6 {
+	flex: 4;
+}
+
+.navbar-spacer-7 {
+	flex: 1;
+}
+
+.navbar-spacer-8 {
+	flex: 4;
+}
+
+.navbar-spacer-9 {
+	flex: 2;
+}

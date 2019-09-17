@@ -1,0 +1,15 @@
+.today-button {
+	font-size: 1rem;
+	padding: 8px 12px;
+	border-radius: 4px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.today-button:focus {
+	outline: none;
+}
+
+.today-button:hover {
+	background: rgb(0,0,0,0.05);
+}

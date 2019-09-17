@@ -1,0 +1,31 @@
+.hamburger-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	width: 45px;
+	border-radius: 45px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.hamburger-button:focus {
+	outline: none;
+}
+
+.hamburger-button:hover {
+	background: rgb(0,0,0,0.05);
+}
+
+.hamburger-button-spacer {
+	background: transparent;
+	height: 12px;
+}
+
+.hamburger-button-line {
+	height: 2px;
+	width: 18px;
+	background: #666666;
+}

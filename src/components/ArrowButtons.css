@@ -1,0 +1,22 @@
+.arrow-buttons {
+	display: flex;
+	align-items: center;
+}
+
+.arrow-button {
+	height: 35px;
+	width: 35px;
+	font-size: 1.1rem;
+	background: transparent;
+	border: none;
+	border-radius: 35px;
+	cursor: pointer;
+}
+
+.arrow-button:focus {
+	outline: none;
+}
+
+.arrow-button:hover {
+	background: rgb(0,0,0,0.05);
+}

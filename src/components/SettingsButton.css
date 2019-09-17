@@ -1,0 +1,19 @@
+.settings-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.settings-button:focus {
+	outline: none;
+}
+
+.settings-button:hover {
+	background: rgb(0,0,0,0.05);
+}
