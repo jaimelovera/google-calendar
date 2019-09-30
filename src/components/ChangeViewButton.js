@@ -15,9 +15,11 @@ class ChangeViewButton extends React.Component {
 
 	render() {
 		return (
-			<select className ="change-view-button" onChange={this.changeCurrentView}>
-				<option value="week" selected={this.props.currentView === "week" ? "selected" : ""}>Week</option>
-				<option value="month" selected={this.props.currentView === "month" ? "selected" : ""}>Month</option>
+			<select className ="change-view-button"
+					onChange={this.changeCurrentView}
+					defaultValue={this.props.currentView}>
+				<option value="week">Week</option>
+				<option value="month">Month</option>
 			</select>
 		);
 	}
