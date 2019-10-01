@@ -1,0 +1,79 @@
+.calendar-grid-container-header {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-auto-rows: 100px;
+	background: #FFF;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.calendar-grid-container-hours {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-auto-rows: 40px;
+	top: 164px;
+	bottom: 0;
+   	position: absolute;
+	overflow-y: auto;
+ 	border-left: 1px solid #DADADA;
+}
+
+.calendar-header-box {
+	padding-top: 25px;
+	border-bottom: 1px solid #CDCDCD;
+	text-align: center;
+}
+
+.calendar-header-box-day {
+	font-size: 0.8em;
+	padding-bottom: 0.1rem;
+}
+
+.calendar-header-box-day-today {
+	color: #1475D5;
+}
+
+.calendar-header-box-date {
+	font-size: 1.5em;
+}
+
+.calendar-date-circle-today {
+	background-color: #1475D5;
+	color: white;
+	margin:auto;
+	border-radius: 50%;
+	width: 46px;
+	height: 46px;
+	vertical-align: middle;
+	line-height: 46px;  
+}
+
+.calendar-date-circle {
+	margin:auto;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;  
+}
+
+.calendar-hourBox {
+	border-bottom: 1px solid #DADADA;
+	border-right:  1px solid #DADADA;
+}
+
+.calendar-hourBox-now {
+	border-top: 2px solid red;
+}
+
+.red-circle-now {
+  position: relative;
+  width: 6px;
+  top: -7px;
+  left: -6px;
+  background: red;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
