@@ -90,13 +90,28 @@ class CalendarWeek extends React.Component {
 				}
 			},this);
 
+		let timeLabelsArray = ['','1 AM','2 AM','3 AM','4 AM','5 AM','6 AM','7 AM','8 AM', '9 AM', '10 AM', '11 AM',
+							   '12 PM','1 PM','2 PM','3 PM','4 PM','5 PM','6 PM','7 PM','8 PM', '9 PM', '10 PM', '11 PM']
+		let timeLabels = timeLabelsArray.map( (timeLabel) => {
+			return <div className="calendar-timeLabel">{timeLabel}</div>
+		});
+
+
 		return (
 			<div>
-				<div className="calendar-grid-container-header">
-					{headerRow}
+				<div className="calendar-grid-container-wrapper1">
+					<div className="calendar-grid-container-header-placeholder"></div>
+					<div className="calendar-grid-container-header">
+						{headerRow}
+					</div>
 				</div>
-				<div className="calendar-grid-container-hours">
-					{hours}
+				<div className="calendar-grid-container-wrapper2">
+					<div className="calendar-grid-container-timelabel">
+						{timeLabels}
+					</div>
+					<div className="calendar-grid-container-hours">
+						{hours}
+					</div>
 				</div>
 			</div>
 		);
