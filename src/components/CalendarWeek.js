@@ -49,34 +49,24 @@ class CalendarWeek extends React.Component {
 
 	render() {
 		let weekDays = ['SUN','MON','TUE','WED','THU','FRI','SAT']
-		let weekDates = [this.props.currentYearMonthDay.day]
-
 		let currentDate = new Date(this.props.currentYearMonthDay.year,this.props.currentYearMonthDay.month,this.props.currentYearMonthDay.day);
+		currentDate.setDate(currentDate.getDate() - currentDate.getDay());
+		let weekDates = [currentDate.getDate()]
 		for(let i=0; i<6; i++) {
 			currentDate.setDate(currentDate.getDate() + 1);
 			weekDates.push(currentDate.getDate());
 		}
 		
 		let headerRow = weekDays.map( function(weekDay,index) {
-			if(this.checkCurrentDate(weekDates[index])) {
-				return (
-					<div key={index} className="calendar-header-box">
-						<div className="calendar-header-box-day calendar-header-box-day-today">{weekDay}</div>
-						<div className="calendar-header-box-date"><div className="calendar-date-circle-today">{weekDates[index]}</div></div>
-					</div>
-				)
-			}
-			else {
-				return (
-					<div key={index} className="calendar-header-box">
-						<div className="calendar-header-box-day">{weekDay}</div>
-						<div className="calendar-header-box-date"><div className="calendar-date-circle">{weekDates[index]}</div></div>
-					</div>
-				)
-			}
+			return (
+				<div key={index} className="calendar-header-box">
+					<div className={"calendar-header-box-day " + (this.checkCurrentDate(weekDates[index]) ? "calendar-header-box-day-today" : "")}>{weekDay}</div>
+					<div className="calendar-header-box-date"><div className={"calendar-date-circle " + (this.checkCurrentDate(weekDates[index]) ? "calendar-date-circle-today" : "")}>{weekDates[index]}</div></div>
+				</div>
+			)
 		},this);
 
-		let hoursInWeek = [...Array(24*7).keys()]
+		let hoursInWeek = [...Array(24*7).keys()];
 		let hours = hoursInWeek.map( function(hour) {
 				if(this.checkCurrentHour(hour)) {
 					return (
@@ -93,7 +83,7 @@ class CalendarWeek extends React.Component {
 		let timeLabelsArray = ['','1 AM','2 AM','3 AM','4 AM','5 AM','6 AM','7 AM','8 AM', '9 AM', '10 AM', '11 AM',
 							   '12 PM','1 PM','2 PM','3 PM','4 PM','5 PM','6 PM','7 PM','8 PM', '9 PM', '10 PM', '11 PM']
 		let timeLabels = timeLabelsArray.map( (timeLabel) => {
-			return <div className="calendar-timeLabel">{timeLabel}</div>
+			return <div key={timeLabel} className="calendar-timeLabel">{timeLabel}</div>
 		});
 
 

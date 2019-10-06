@@ -1,0 +1,40 @@
+.calendar-month-wrapper {
+	height: calc(100vh - 64px);
+	margin: 0 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+ 	border-left: 1px solid #DADADA;
+}
+
+.calendar-month-box-day {
+	padding-top: 0.5rem;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 0.7em;
+	border-bottom: 1px solid #DADADA;
+	border-right:  1px solid #DADADA;
+}
+
+.calendar-month-date-circle {
+	text-align: center;
+	margin:auto;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	line-height: 25px;
+	cursor: pointer;
+}
+
+.calendar-month-date-circle:hover {
+	background-color: #EEEEEE;
+}
+
+.calendar-month-date-circle-today {
+	background-color: #1475D5;
+	color: white;
+}
+
+.calendar-month-date-circle-today:hover {
+	background-color: #0F65BB;
+}

@@ -24,7 +24,12 @@ function NavBar(props) {
 			</div>
 			<div className ="navbar-spacer-3"></div>
 			<div className ="navbar-todaybutton">
-				<TodayButton changeDate={props.changeDate}/>
+				<TodayButton currentView={props.currentView}
+							 changeDate={props.changeDate}
+							 currentYear={props.currentYear}
+							 currentMonth={props.currentMonth}
+							 currentDay={props.currentDay}
+				/>
 			</div>
 			<div className ="navbar-spacer-4"></div>
 			<div className ="navbar-arrowbuttons">
@@ -37,8 +42,10 @@ function NavBar(props) {
 			</div>
 			<div className ="navbar-spacer-5"></div>
 			<div className ="navbar-currentmonthyear">
-				<CurrentMonthYear currentYear={props.currentYear}
+				<CurrentMonthYear currentView={props.currentView}
+								  currentYear={props.currentYear}
 								  currentMonth={props.currentMonth}
+								  currentDay={props.currentDay}
 				/>
 			</div>
 			<div className ="navbar-spacer-6"></div>
