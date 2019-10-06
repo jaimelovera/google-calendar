@@ -11,6 +11,8 @@ import ProfilePhotoIcon from './ProfilePhotoIcon';
 
 import './NavBar.css';
 
+/* This is the pages main navigaion bar up top. It is made up of the various components below
+ * and uses css flexbox. */
 function NavBar(props) {
 	return (
 		<nav className='navbar'>
@@ -28,8 +30,7 @@ function NavBar(props) {
 							 changeDate={props.changeDate}
 							 currentYear={props.currentYear}
 							 currentMonth={props.currentMonth}
-							 currentDay={props.currentDay}
-				/>
+							 currentDay={props.currentDay} />
 			</div>
 			<div className ="navbar-spacer-4"></div>
 			<div className ="navbar-arrowbuttons">
@@ -37,16 +38,14 @@ function NavBar(props) {
 							  changeDate={props.changeDate}
 							  currentYear={props.currentYear}
 							  currentMonth={props.currentMonth}
-							  currentDay={props.currentDay}
-				/>
+							  currentDay={props.currentDay} />
 			</div>
 			<div className ="navbar-spacer-5"></div>
 			<div className ="navbar-currentmonthyear">
 				<CurrentMonthYear currentView={props.currentView}
 								  currentYear={props.currentYear}
 								  currentMonth={props.currentMonth}
-								  currentDay={props.currentDay}
-				/>
+								  currentDay={props.currentDay} />
 			</div>
 			<div className ="navbar-spacer-6"></div>
 			<div className ="navbar-settingsbutton">

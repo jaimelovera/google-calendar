@@ -1,7 +1,7 @@
 import React from 'react';
-
 import './SettingsButton.css';
 
+/* This settings button does not do anything, it is just a placeholder to emulate the look of google calendar. */
 function SettingsButton(props) {
 	return (
 		<button className="settings-button">

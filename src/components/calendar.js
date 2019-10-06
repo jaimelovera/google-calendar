@@ -3,17 +3,15 @@ import React from 'react';
 import CalendarWeek from './CalendarWeek';
 import CalendarMonth from './CalendarMonth';
 
+/* This component simply directs the calendar to the correct calendar view that is being asked for. */
 class Calendar extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {}
 	}
 
 	render() {
 		let calendar;
-		let currentYearMonthDay = {year:this.props.year,
-								   month:this.props.month,
-								   day:this.props.day}
+		let currentYearMonthDay = {year:this.props.year,month:this.props.month,day:this.props.day}
 		if(this.props.currentView === "week") {
 			calendar = <CalendarWeek currentYearMonthDay={currentYearMonthDay} />;
 		}
