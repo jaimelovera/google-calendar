@@ -1,6 +1,6 @@
-# Google Calendar Clone Using React (Basic functionalities)
+# Google Calendar Clone Using React
 
-> A very basic and bare bone clone of google calendar. Display calendar in both weekly and monthly views and populated the correct dates for every month. Shows the current time on calendar represented by a red line.
+> A very basic and bare bone clone of google calendar. Displays calendar in both weekly and monthly views and populates with the correct dates for every month. Shows the current time on calendar represented by a red line.
 
 ## Visit My Hosted Demo
 https://google-calendar.netlify.app/
