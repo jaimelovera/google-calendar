@@ -1,4 +1,5 @@
 import React from 'react';
+import './CurrentMonthYear.css'
 
 class CurrentMonthYear extends React.Component {
 	constructor(props) {
@@ -45,7 +46,7 @@ class CurrentMonthYear extends React.Component {
 
 	render() {
 		return (
-			<h1>{this.getMonthToDisplay()}</h1>
+			<h1 className="current-month-year">{this.getMonthToDisplay()}</h1>
 		);
 	}
 }

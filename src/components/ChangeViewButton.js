@@ -1,4 +1,5 @@
 import React from 'react';
+import './ChangeViewButton.css'
 
 class ChangeViewButton extends React.Component {
 	/* Simple dropdown selector.
