@@ -27,6 +27,10 @@ npm run build
 - I realized that the CSS files are all global. So one css file will effect all other components with the same class name. In the future I will look at using CSS Modules to be able to scope my CSS classes to only their local components. This way my app will be more modular and I wont have problems with clashing CSS.
 - I decided to not spend more time adding additional functionality to this calendar, because there are other ideas I want to start bringing to life! :)
 
+## Screenshot
+
+![Homepage](./readme_screenshots/homepage.png)
+
 ## App Info
 
 #### Author: [Jaime Lovera](https://www.jaimelovera.com/)
